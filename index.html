@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOC MOnitoring Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>NOC Monitoring Dashboard</h1>
+    </header>
+    <main>
+        <aside>
+            <!-------------------------sidebar------------------------->
+            <nav>
+                <ul>
+                    <li>Dashboard</li>
+                    <li>Chart</li>
+                    <li>Calendar</li>
+                    <li>Settings</li>
+                </ul>
+            </nav>
+        </aside>
+        <!-------------------------kpis------------------------->
+        <div class="main-content">
+            <section>
+                <h2>KPI's</h2>
+                <div class="kpi-container">
+                    <div class="kpi-card">
+                        <h3>Open</h3>
+                        <p>1</p>
+                    </div>
+                    <div class="kpi-card">
+                        <h3>Critical</h3>
+                        <p>5</p>
+                    </div>
+                    <div class="kpi-card">
+                        <h3>Warning</h3>
+                        <p>6</p>
+                    </div>
+                    <div class="kpi-card">
+                        <h3>Closed</h3>
+                        <p>2</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <label for="search">Search Alarm</label>
+                    <input id="search" type="text">
+                </div>
+            </section>
+            <!-------------------------Dashboard------------------------->
+            <section>
+                <h3>Tickets Per day</h3>
+                Chart will be displayed here.
+            </section>
+            <section>
+                <h3>Recent Alarm</h3>
+                <ul>
+                    <li>Router Guadalajara</li>
+                    <li>Firewall Monterrey</li>
+                    <li>BTS Puebla</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+<!-------------------------fotter------------------------->
+    <footer>
+        Created by Jesús Toledo
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
